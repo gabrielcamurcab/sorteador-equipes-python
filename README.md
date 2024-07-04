@@ -1,5 +1,5 @@
 # Dada uma lista de nomes, sortear equipes com um número X (fornecido pelo usuário) de nomes em cada eqipe. 
-## Caso não seja possível formar a última equipe com o número escolhido, ela terá uma pessoa a mais.
+## Caso não seja possível formar a última equipe com o número escolhido, ela terá todos os nomes restantes.
 
 1. Ler a lista de nomes - OK
 2. Adicionar isto a um array - OK
