@@ -6,14 +6,25 @@ class Drawer:
         self.team_size = 0
         self.teams = []
 
-    def read_names(self, names):
+    def set_names(self, names):
         self.add_names_to_array(names)
     
     def add_names_to_array(self, names):
         self.names = names.split(',')
 
-    def read_teams_size(self, team_size):
+    def set_teams_size(self, team_size):
         self.team_size = int(team_size)
+
+    def create_normal_team(self):
+        team = ()
+        for _ in range(self.team_size):
+            random.shuffle(self.names)
+            name_drawn = self.names.pop()
+            team += (name_drawn,)
+        return team
+    
+    def create_anormal_team(self):
+        return tuple(self.names)
 
     def create_teams(self):
         count_names = len(self.names)
@@ -21,16 +32,13 @@ class Drawer:
         while count_names > 0:
             new_team = ()
             if count_names >= team_size * 2:
-                for i in range (team_size):
-                    random.shuffle(self.names)
-                    name_drawn = self.names.pop()
-                    new_team += (name_drawn,)
-                    count_names -= 1
+                new_team = self.create_normal_team()
+                count_names -= self.team_size
             else:
                 while count_names > 0:
-                    name_drawn = self.names.pop()
-                    new_team += (name_drawn,)
-                    count_names -= 1
+                    new_team = self.create_anormal_team()
+                    count_names = 0
+                    self.names = []
             self.teams.append(new_team)
 
     def show_teams(self):
