@@ -1,0 +1,141 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribuição / pacotes de distribuição
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+bin/
+lib/
+lib64/
+include/
+scripts/
+pyenv/
+.venv/
+
+# Distribuição / empacotamento
+*.egg
+*.egg-info/
+dist/
+build/
+*.egg-info/
+
+# Arquivos de configuração do PyInstaller
+# geralmente adicionados ao arquivo .gitignore, se estiverem no diretório raiz
+*.spec
+
+# Instalação do Installer Windows
+*.msi
+*.exe
+*.dll
+*.deb
+*.pkg
+*.rpm
+
+# Cache do Pyre
+.pyre/
+
+# Cache do mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pytest cache
+.pytest_cache/
+.pytest_cache/*
+
+# Pytype cache
+.pytype/
+
+# Arquivos de configuração do profiler
+.prof
+
+# Logs
+logs/
+*.log
+
+# Arquivos de configuração do Editor
+.vscode/
+*.code-workspace
+
+# Arquivos de configuração do Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Arquivos de configuração do Pycharm
+.idea/
+
+# Arquivos de configuração de debug
+.vscode/
+*.code-workspace
+
+# Arquivos de configuração temporários
+*.swp
+*.swo
+*.swn
+*.tmp
+
+# Arquivos de configuração do pylint
+.pylintrc
+
+# Arquivos de configuração do pytest
+.pytest_cache/
+
+# Arquivos de configuração do coverage
+.coverage
+.coverage.*
+
+# Arquivos de configuração do tox
+.tox/
+
+# Arquivos de configuração do Sphinx
+docs/_build/
+docs/_templates/
+
+# Arquivos de configuração do Django
+*.log
+*.pot
+*.mo
+
+# Arquivos de configuração do Flask
+instance/
+.webassets-cache
+
+# Arquivos de configuração do Scrapy
+.scrapy
+
+# Arquivos de configuração do Sphinx
+docs/_build/
+
+# Arquivos de configuração do PyBuilder
+target/
+
+# Outras configurações e diretórios comuns
+.DS_Store
+*.pdf
+*.html
+*.json
+*.xml
+*.yaml
+*.yml
+*.csv
+*.ini
+*.bak
+*.backup
+*.tar
+*.tar.gz
+*.tar.xz
+*.tar.bz2
+*.zip
+*.rar
+*.7z
+*.xz
+*.bz2
